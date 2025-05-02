@@ -16,6 +16,7 @@ This project integrates data from the **Amazon Selling Partner API (SP-API)**:
 1. **SP-API Orders API**  
    - Fetches Amazon order data using access tokens, LWA authentication, and SP credentials.  
    - Contains key order metadata like purchase dates, order status, buyer info, etc.
+   - API can be accessed here [here](https://developer-docs.amazon.com/sp-api)
 
 2. **Data is fetched as JSON** and transformed through multiple pipeline layers for analytics and reporting.
 
