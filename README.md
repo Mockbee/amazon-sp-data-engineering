@@ -63,14 +63,18 @@ This project integrates data from the **Amazon Selling Partner API (SP-API)**:
 5. **Databricks Orchestration:**  
    - Modular notebooks manage token generation, ingestion, transformation, and archival.  
    - Uses widgets and secrets for parameterization and security.
+   - Modular notebooks manage token generation, ingestion, transformation, and archival.
 
+Uses widgets and secrets for parameterization and security.
+
+Scheduled and managed using Databricks Workflows for automation and reliability.
 ---
 
 ### **Key Features**
 
 - **Secure Authentication:** OAuth 2.0 and AWS SigV4 implemented correctly for Amazon SP-API.  
 - **Structured Pipeline:** Follows Medallion Architecture for scalable processing.  
-- **Optimized Storage Formats:** Uses JSON (Bronze), Parquet (Silver), and Delta (Gold).  
+- **Optimized Storage Formats:** Uses Delta (Bronze), Delta (Silver), and Delta (Gold).  
 - **Databricks + Azure Integration:** Full lifecycle from ingestion to storage using Azure-native services.  
 - **Modular Design:** Separate notebooks for each pipeline stage for flexibility and reusability.
 
